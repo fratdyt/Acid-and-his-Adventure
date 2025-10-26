@@ -2,7 +2,7 @@ Acid and his Adventure adalah sebuah mini game 2D yg dibuat menggunakan Construc
 yg dimana cara bermainya adalah player harus mencari jalan untuk bisa mencapai ke stage selanjutnya. Game ini tercipta karna adanya project akhir untuk pelajaran 
 sentra Game Development waktu SMK dulu
 
-terdapat 3 level di dalam game, dan dikarenakan hanya ada 3 level, setiap levelnya memiliki peningkatan kesulitan yang cukup signifikan. 
+player akan memainkan karakter yang bernama 'Acid' dan akan terdapat 3 level di dalam game. Dikarenakan hanya ada 3 level, setiap levelnya memiliki peningkatan kesulitan yang cukup signifikan. 
 
 berikut langkah untuk memainkan gamenya:
 
