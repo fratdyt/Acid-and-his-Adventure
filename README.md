@@ -1,5 +1,6 @@
 Acid and his Adventure adalah sebuah mini game 2D yg dibuat menggunakan Construct 2. Terinspirasi dari game Super Mario Bros, 
-yg dimana cara bermainya adalah player harus mencari jalan untuk bisa mencapai ke stage selanjutnya. 
+yg dimana cara bermainya adalah player harus mencari jalan untuk bisa mencapai ke stage selanjutnya. Game ini tercipta karna adanya project akhir untuk pelajaran 
+sentra Game Development waktu SMK dulu
 
 terdapat 3 level di dalam game, dan dikarenakan hanya ada 3 level, setiap levelnya memiliki peningkatan kesulitan yang cukup signifikan. 
 
@@ -12,4 +13,4 @@ berikut langkah untuk memainkan gamenya:
 
 IMPORTANCE:
 
-This is my first game development project, so there will be a lot of bugs in it. In the future, I will continue working on this game until it reaches 5 levels and fix each bug one by one. 
+This is my first game development project, so there will be a lot of bugs in it.
