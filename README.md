@@ -8,3 +8,7 @@ berikut langkah untuk memainkan gamenya:
 1. download app bernama 'Construct 2' dan download file gamenya yg bertuliskan 'Acid_And_His_Adventure.caproj'
 2. ketika sudah terdownload, tekan 2x file gamenya dan kalian akan diarahkan ke app 'Construct 2'.
 3. kalian tinggal klik, "Run Layout" dan game sudah bisa dimainkan
+
+
+IMPORTANCE:
+This is my first game development project, so there will be a lot of bugs in it. In the future, I will continue working on this game until it reaches 5 levels and fix each bug one by one. 
