@@ -11,4 +11,5 @@ berikut langkah untuk memainkan gamenya:
 
 
 IMPORTANCE:
+
 This is my first game development project, so there will be a lot of bugs in it. In the future, I will continue working on this game until it reaches 5 levels and fix each bug one by one. 
