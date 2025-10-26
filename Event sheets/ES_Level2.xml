@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_Level2</name>
+    <events>
+        <variable constant="0" name="Nyawa2" sid="742569702742691" static="0" type="number">3</variable>
+        <variable constant="0" name="Skor2" sid="101524283965716" static="0" type="number">0</variable>
+        <event-block sid="350921039047834">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="606648343434042" type="Player2">
+                    <param id="0" name="Object">Bintang2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="644541750590489" type="System">
+                    <param id="0" name="Variable">Skor2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="540992936363545" type="txt_score2">
+                    <param id="0" name="Text">&quot;Skor: &quot; &amp;Skor2 </param>
+                </action>
+                <action id="-9" name="Destroy" sid="544283113073118" type="Bintang2" />
+            </actions>
+        </event-block>
+        <event-block sid="254116676337784">
+            <conditions>
+                <condition id="2" name="Key is down" sid="331339042017854" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="221640184179554" type="Player2">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="601423442092609" type="Player2">
+                    <param id="0" name="Animation">&quot;Lari&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="404377991161557" type="Player2">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="116999061528662">
+            <conditions>
+                <condition id="2" name="Key is down" sid="967765868532107" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="496623609163500" type="Player2">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="158414937451993" type="Player2">
+                    <param id="0" name="Animation">&quot;Lari&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="497738591049950" type="Player2">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="852102601990001">
+            <conditions>
+                <condition id="3" name="On key released" sid="667691727025674" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="257086946218571" type="Player2">
+                    <param id="0" name="Animation">&quot;Diam&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="380651935526047">
+            <conditions>
+                <condition id="3" name="On key released" sid="831895791653501" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="660417999185611" type="Player2">
+                    <param id="0" name="Animation">&quot;Diam&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="814499314404414">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="108384428629591" type="Player2">
+                    <param id="0" name="Object">Kaktus3_2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="442630106407639" type="System">
+                    <param id="0" name="Layout">GameOver2</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="176923113680682" type="System">
+                    <param id="0" name="Variable">Nyawa2</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="0" name="Set text" sid="173943216215256" type="txt_nyawa2">
+                    <param id="0" name="Text">&quot;Nyawa: &quot;&amp;Nyawa2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="995882292180841">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="281640712727514" type="Player2" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="266550116600248" type="Player2">
+                    <param id="0" name="Animation">&quot;Lompat&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="618397056825859">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="929582555103654" type="Player2" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="901397547590190" type="Player2">
+                    <param id="0" name="Animation">&quot;Diam&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="629564232661248">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="902761140669232" type="Player2">
+                    <param id="0" name="Object">SignArrow2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="952573129259515" type="System">
+                    <param id="0" name="Layout">Level3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447138725045099">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="112204844750757" type="System">
+                    <param id="0" name="Variable">Nyawa2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="763997257582481" type="System" />
+                <action id="-21" name="Reset global variables" sid="518254611232887" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

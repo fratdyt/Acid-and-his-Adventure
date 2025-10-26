@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_MenuAwal</name>
+    <events>
+        <event-block sid="770847489034638">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="275569111295341" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">txt_play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="776734113286929" type="System">
+                    <param id="0" name="Layout">Level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="863381500598901">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="731159824209344" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">txt_CaraBermain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="953204905643868" type="System">
+                    <param id="0" name="Layout">CaraBermain</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

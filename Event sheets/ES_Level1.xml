@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_Level1</name>
+    <events>
+        <variable constant="0" name="Skor1" sid="338860707329977" static="0" type="number">0</variable>
+        <event-block sid="987515814210145">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="818598214462019" type="Player1">
+                    <param id="0" name="Object">Bintang1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="323332612574336" type="System">
+                    <param id="0" name="Variable">Skor1</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="148782310976255" type="txt_score1">
+                    <param id="0" name="Text">&quot;Skor: &quot;&amp;Skor1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="259691176570286" type="Bintang1" />
+            </actions>
+        </event-block>
+        <event-block sid="419707749521308">
+            <conditions>
+                <condition id="2" name="Key is down" sid="817193935714284" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="895059022444062" type="Player1">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="328145524158987" type="Player1">
+                    <param id="0" name="Animation">&quot;Lari&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="404020445684158" type="Player1">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="251092853000307">
+            <conditions>
+                <condition id="2" name="Key is down" sid="768616261962570" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="636972253503480" type="Player1">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="343873806600590" type="Player1">
+                    <param id="0" name="Animation">&quot;Lari&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="898753356539910" type="Player1">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="756434944537559">
+            <conditions>
+                <condition id="3" name="On key released" sid="103861935770826" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="201501870532919" type="Player1">
+                    <param id="0" name="Animation">&quot;Diam&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527801331105552">
+            <conditions>
+                <condition id="3" name="On key released" sid="743963135928745" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="163610313855773" type="Player1">
+                    <param id="0" name="Animation">&quot;Diam&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="768209649042446">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="143907099816308" type="Player1" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="941780592783617" type="Player1">
+                    <param id="0" name="Animation">&quot;Lompat&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="245449955806034">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="631551731778104" type="Player1" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="289327823667729" type="Player1">
+                    <param id="0" name="Animation">&quot;Diam&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="433635356233075">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="982950141499955" type="Player1">
+                    <param id="0" name="Object">SignArrow1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="394611272594355" type="System">
+                    <param id="0" name="Layout">Level2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

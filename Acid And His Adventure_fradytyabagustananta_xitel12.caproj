@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Projek Sentra</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1hdaorwdy62zx</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>MenuAwal</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Background1" sid="293976397005968">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\BG.png" />
+        </object-type>
+        <object-type name="Pijakan2_2" sid="175352201683726">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="658721211557285">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="636688408495120" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Tile\2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pijakan5_1" sid="391582045938129">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="875397119032090">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403318009811057" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Tile\5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="252537486686026">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Kaktus3_2" sid="561129530423608">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718022067800290" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Cactus (3).png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.309091" />
+                            <point x="0.246875" y="0.261364" />
+                            <point x="0.3625" y="0.572727" />
+                            <point x="0.60625" y="0.327273" />
+                            <point x="0.671875" y="0.0227272" />
+                            <point x="0.94375" y="0.0363636" />
+                            <point x="0.915625" y="0.513636" />
+                            <point x="0.7625" y="1" />
+                            <point x="0.125" y="0.986364" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Balok2" sid="785639495751074">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="262243943058703">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954985737713676" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Crate.png">
+                        <collision-poly>
+                            <point x="0.00990099" y="0.00990099" />
+                            <point x="0.990099" y="0.00990099" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignArrow2" sid="325386379816008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694566077849346" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\SignArrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pohon" sid="323258538381034">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="482532141584459">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729982749982856" speed="5">
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Tree.png">
+                        <collision-poly>
+                            <point x="0.134185" y="0.415385" />
+                            <point x="0.0854632" y="0.267308" />
+                            <point x="0.308706" y="0.241346" />
+                            <point x="0.727636" y="0.251923" />
+                            <point x="0.908546" y="0.293269" />
+                            <point x="0.945686" y="0.407693" />
+                            <point x="0.634186" y="0.578846" />
+                            <point x="0.693291" y="0.992308" />
+                            <point x="0.45048" y="0.988462" />
+                            <point x="0.448882" y="0.613461" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2" sid="163840773289635">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="716292233446900">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="974810600054985">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="823648804963900">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="371413136516470">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Diam" pingpong="0" repeatcount="1" repeatto="0" sid="892393879142299" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__000.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.05" />
+                            <point x="0.75" y="0.0318182" />
+                            <point x="0.90625" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__009.png" />
+                </animation>
+                <animation framecount="10" loop="1" name="Lari" pingpong="0" repeatcount="1" repeatto="0" sid="620827159366168" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="Lompat" pingpong="0" repeatcount="1" repeatto="0" sid="209398306054839" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__009.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgGameOver2" sid="746701910472783">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\BG.png" />
+        </object-type>
+        <object-type name="Mouse" sid="910814564290681">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="CobaLagi2" sid="594792791274202">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109391840677116" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_CobaLagi2" sid="777298608487956">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="547840039451922">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="txt_score2" sid="255855126508371">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Bintang2" sid="300572952851076">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="304061482262704" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="F:\Kelas 11\GameDev\Sprite\Skor\PNG\Pixel\Style 1\emote_star.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_nyawa2" sid="168721208528412">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Background2" sid="260068974635229">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\Kelas 11\GameDev\Sprite\Platform\Background\BG.png" />
+        </object-type>
+        <object-type name="Pijakan2_1" sid="730778122532290">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="810953569219104">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502891132809197" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Tile\2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pijakan5_2" sid="348548292898033">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="229009058968788">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="116167890529133" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Tile\5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player1" sid="676158938812482">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="303888975595795">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="685077364795714">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="152081009180589">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="527428257636656">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Diam" pingpong="0" repeatcount="1" repeatto="0" sid="467169382641680" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__000.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.05" />
+                            <point x="0.75" y="0.0318182" />
+                            <point x="0.90625" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__009.png" />
+                </animation>
+                <animation framecount="10" loop="1" name="Lari" pingpong="0" repeatcount="1" repeatto="0" sid="871580870635680" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="Lompat" pingpong="0" repeatcount="1" repeatto="0" sid="285914390657854" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__009.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bintang1" sid="389646089356565">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="938255863942390" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="F:\Kelas 11\GameDev\Sprite\Skor\PNG\Pixel\Style 1\emote_star.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignArrow1" sid="221260471748973">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547426305234757" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\SignArrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_nyawa1" sid="505502643429374">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_score1" sid="846585679975131">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Bush2_1" sid="798937832234149">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102754735705056" speed="5">
+                    <frame duration="1" hotspotX="0.509091" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Bush (2).png">
+                        <collision-poly>
+                            <point x="0.167939" y="0.297297" />
+                            <point x="0.496183" y="0.148649" />
+                            <point x="0.80916" y="0.337838" />
+                            <point x="0.854962" y="0.5" />
+                            <point x="0.839695" y="0.716216" />
+                            <point x="0.496183" y="0.986486" />
+                            <point x="0.152672" y="0.72973" />
+                            <point x="0.0305344" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Skeleton1" sid="423181163907641">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800016396338601" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Skeleton.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.490196" />
+                            <point x="0.5" y="0.254902" />
+                            <point x="0.86" y="0.411765" />
+                            <point x="0.913333" y="0.490196" />
+                            <point x="0.98" y="0.941176" />
+                            <point x="0.0133333" y="0.960784" />
+                            <point x="0.146667" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_level" sid="841783318030939">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_level2" sid="763113453638451">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Background_MA" sid="570573560496168">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\Kelas 11\GameDev\Sprite\Platform\Background\BG.png" />
+        </object-type>
+        <object-type name="txt_play" sid="986697363230824">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="977061549813794">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Pijakan5_3" sid="460767684073572">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="627712020913108">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250316083902160" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Tile\5.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background3" sid="929349788377085">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\Kelas 11\GameDev\Sprite\Platform\Background\BG.png" />
+        </object-type>
+        <object-type name="Pijakan2_3" sid="476443210513961">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="408108680341777">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="768775205170260" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Tile\2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Kaktus1_3" sid="723978291210552">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="213473224128860" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504505" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Cactus (1).png">
+                        <collision-poly>
+                            <point x="0.472222" y="0" />
+                            <point x="0.898148" y="0.252252" />
+                            <point x="0.981481" y="0.594594" />
+                            <point x="0.671296" y="0.761261" />
+                            <point x="0.685185" y="0.990991" />
+                            <point x="0.472222" y="1" />
+                            <point x="0.342592" y="0.954955" />
+                            <point x="0.259259" y="0.531532" />
+                            <point x="0.00925926" y="0.283784" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Balok3" sid="900287462859803">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="345081088912142">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="781272776812632" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Crate.png">
+                        <collision-poly>
+                            <point x="0.00990099" y="0.00990099" />
+                            <point x="0.990099" y="0.00990099" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Batu" sid="628736385661572">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="676973774077207">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="953611411088047" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.50505" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\StoneBlock.png">
+                        <collision-poly>
+                            <point x="0" y="0.0192334" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.986825" y="0.503252" />
+                            <point x="0.991935" y="0.986301" />
+                            <point x="0.5" y="1" />
+                            <point x="0.00806452" y="0.986301" />
+                            <point x="0" y="0.472949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SignArrow3" sid="392491254876675">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="447523666308357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\SignArrow.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Kaktus3_3" sid="272452543344051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="334939249326571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Cactus (3).png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.309091" />
+                            <point x="0.246875" y="0.261364" />
+                            <point x="0.3625" y="0.572727" />
+                            <point x="0.60625" y="0.327273" />
+                            <point x="0.671875" y="0.0227272" />
+                            <point x="0.94375" y="0.0363636" />
+                            <point x="0.915625" y="0.513636" />
+                            <point x="0.7625" y="1" />
+                            <point x="0.125" y="0.986364" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bintang3" sid="237911571903706">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="745206154843366" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.538462" original-source="F:\Kelas 11\GameDev\Sprite\Skor\PNG\Pixel\Style 1\emote_star.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player3" sid="104611934249346">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="435789178834875">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="380429449113288">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="845442522431530">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="954832245498292">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Diam" pingpong="0" repeatcount="1" repeatto="0" sid="428921188811627" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__000.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.05" />
+                            <point x="0.75" y="0.0318182" />
+                            <point x="0.90625" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Idle__009.png" />
+                </animation>
+                <animation framecount="10" loop="1" name="Lari" pingpong="0" repeatcount="1" repeatto="0" sid="702796918451621" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Run__009.png" />
+                </animation>
+                <animation framecount="10" loop="0" name="Lompat" pingpong="0" repeatcount="1" repeatto="0" sid="609349838633343" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__000.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509091" original-source="F:\Kelas 11\GameDev\Sprite\Karakter\Human\Jump__009.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_score3" sid="570316356174067">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_nyawa3" sid="843669353302900">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_level3" sid="101061802966825">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Penyangga" sid="400039475896204">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="384969893351373">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233602376786972" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\Crate.png">
+                        <collision-poly>
+                            <point x="0.00990099" y="0.00990099" />
+                            <point x="0.990099" y="0.00990099" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Penyangga2" sid="266251930588346">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="605253652325114">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458566680497764" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.50505" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\StoneBlock.png">
+                        <collision-poly>
+                            <point x="0.039604" y="0.040404" />
+                            <point x="0.49505" y="0" />
+                            <point x="0.950495" y="0.050505" />
+                            <point x="0.990099" y="0.494949" />
+                            <point x="0.950495" y="0.949495" />
+                            <point x="0.49505" y="1" />
+                            <point x="0.039604" y="0.959596" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgGameOver3" sid="633510832645055">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\BG.png" />
+        </object-type>
+        <object-type name="CobaLagi3" sid="236679300194337">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459836819299568" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_CobaLagi3" sid="957654356006712">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="279331569142726">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BackgrounTamat" sid="439630030795675">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Tamat" sid="327951261289302">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="691757345876679" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.50505" original-source="F:\Kelas 11\GameDev\Sprite\Platform\Desert\png\Objects\StoneBlock.png">
+                        <collision-poly>
+                            <point x="0.039604" y="0.040404" />
+                            <point x="0.49505" y="0" />
+                            <point x="0.950495" y="0.050505" />
+                            <point x="0.990099" y="0.494949" />
+                            <point x="0.950495" y="0.949495" />
+                            <point x="0.49505" y="1" />
+                            <point x="0.039604" y="0.959596" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_Tamat" sid="319624545006843">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_Finish1" sid="130789236059483">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_Finish2" sid="455822263388440">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_Finish3" sid="922392793558180">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_CaraBermain" sid="911486069731759">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="646830260271991">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="BackgorundCaraBermain" sid="571477836147905">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="txt_Tutorial" sid="677714406474239">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Kembali" sid="550077377830935">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706688928408947" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_Kembali" sid="287814945183607">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="JudulGame" sid="632089558265670">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="180407735751955" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="txt_judulgame" sid="186286591756063">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Level1.xml</layout>
+        <layout>Level2.xml</layout>
+        <layout>GameOver2.xml</layout>
+        <layout>MenuAwal.xml</layout>
+        <layout>Level3.xml</layout>
+        <layout>GameOver3.xml</layout>
+        <layout>Tamat.xml</layout>
+        <layout>CaraBermain.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ES_Level2.xml</event-sheet>
+        <event-sheet>ES_GameOver2.xml</event-sheet>
+        <event-sheet>ES_Level1.xml</event-sheet>
+        <event-sheet>ES_MenuAwal.xml</event-sheet>
+        <event-sheet>ES_Level3.xml</event-sheet>
+        <event-sheet>ES_GameOver3.xml</event-sheet>
+        <event-sheet>ES_Tamat.xml</event-sheet>
+        <event-sheet>ES_CaraBermain.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="43" />
+        <global-instance type="Mouse" uid="84" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

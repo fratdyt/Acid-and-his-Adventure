@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES_GameOver2</name>
+    <events>
+        <event-block sid="838449436955255">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="771510722126643" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">txt_CobaLagi2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="960012741613179" type="System">
+                    <param id="0" name="Layout">Level2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
